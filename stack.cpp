@@ -29,4 +29,45 @@ int main()
         awal();
         do
         {
+                       system("cls");
+                        cout<<"\n\t--------- Program Stack --------\n";
+                        cout<<"\n\t------------ Tugas 4 -----------\n";
+                        cout<<"\n\t----- Tumpukan Tong Sampah -----\n\n";
+                        cout<<" 1. PUSH(Simpan)"<<endl;
+                        cout<<" 2. POP(Ambil)"<<endl;
+                        cout<<" 3. EXIT(Keluar)"<<endl;
+                        cout<<"___________________________________________________________________\n\n";
+                       
+                        if (!isEmpty())
+                        {
+                                for(int i = tong.top; i>=0; i--)
+                                {
+                                        cout<<"["<<tong.tmp[i]<<"]"<<endl;     
+                                }
        
+                        }
+                        else
+                        {
+                                cout<<"[ tong sampah kosong ]";
+                        }
+                        cout<<"\nMasukan Pilihan : ";
+                        cin>>pilih;
+                        switch (pilih)
+                        {
+                                case 1:
+                                        cout<<"Buang sampah : ";
+                                        cin>>sampah;
+                                        push(sampah);
+                                        break;
+                                case 2:
+                                        pop ();
+                                        break;
+                                case 3:
+                                        cout<<"Tekan enter untuk keluar : ";
+                                        break;
+                                        default:
+                                                cout<<"ERROR!";
+                                                break;
+                                               
+                        }
+                }
