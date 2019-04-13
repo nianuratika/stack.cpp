@@ -20,4 +20,13 @@ void pop();
 void awal();
 int isEmpty();
 int isFull();
+
+int main()
+{
+        int pilih;
+        char sampah[20];
+        string i;
+        awal();
+        do
+        {
        
