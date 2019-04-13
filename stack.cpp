@@ -71,3 +71,45 @@ int main()
                                                
                         }
                 }
+        while (pilih!=3);
+       
+}
+void push (char sampah[20])
+{
+        if (!isFull())
+        {
+                tong.top = tong.top+1;
+                strcpy(tong.tmp[tong.top],sampah);
+        }
+        else
+        cout<<"isi tong sampah penuh";
+}
+void pop ()
+{
+        if (!isEmpty())
+        {
+                tong.top--;
+                cout<<"Sampah pada tumpukan ke- "<<tong.top+2<<"sudah diambil";
+        }
+        else
+        cout<<"Sampah dalam tong kosong";
+}
+void awal()
+{
+        tong.top = -1;
+}
+int isEmpty()
+{
+        if (tong.top==-1)
+                return 1;
+                else
+                return 0;
+}
+int isFull()
+{
+        if (tong.top == max-1)
+                return 1;
+                else
+
+                return 0;
+}
