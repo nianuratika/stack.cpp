@@ -31,7 +31,7 @@ int main()
         {
                        system("cls");
                         cout<<"\n\t--------- Program Stack --------\n";
-                        cout<<"\n\t------------ Tugas 4 -----------\n";
+                        cout<<"\n\t--------- Tugas Petruk --------\n";
                         cout<<"\n\t----- Tumpukan Tong Sampah -----\n\n";
                         cout<<" 1. PUSH(Simpan)"<<endl;
                         cout<<" 2. POP(Ambil)"<<endl;
